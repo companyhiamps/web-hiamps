@@ -33,7 +33,7 @@ export default function PowerBackupBatteries() {
                       transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                       <Image
-                        src="/images/pages/products/hiamps-red-series-battery-2.webp"
+                        src="/images/temp/lithium-dummy.avif"
                         alt="Hiamps Blue Series Battery"
                         width={450}
                         height={550}

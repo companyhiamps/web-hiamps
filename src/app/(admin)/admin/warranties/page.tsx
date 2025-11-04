@@ -107,7 +107,7 @@ useEffect(() => {
                       <td className="p-3">{item.userName}</td>
                       <td className="p-3">{item.phone}</td>
                       <td className="p-3">
-                        {new Date(item.createdAt).toLocaleDateString()}
+                        {new Date(item.purchaseDate).toLocaleDateString()}
                       </td>
                       <td className="p-3 text-gray-700">
                         <p>{item.address}</p>
@@ -166,13 +166,13 @@ useEffect(() => {
               <p><strong>Product Purpose:</strong> {selectedWarranty.purpose}</p>
               <p><strong>Service warranty:</strong> {selectedWarranty.sWarranty} Months</p>
               <p><strong>Pro-Rate warranty:</strong> {selectedWarranty.pWarranty} Months</p>
-              {/* <p><strong>Purchase Date:</strong> {new Date(selectedWarranty.purchaseDate).toLocaleDateString()}</p> */}
-              <p><strong>Registered At:</strong> {new Date(selectedWarranty.createdAt).toLocaleString()}</p>
+              <p><strong>Purchase Date:</strong> {new Date(selectedWarranty.purchaseDate).toLocaleDateString()}</p>
+              {/* <p><strong>Registered At:</strong> {new Date(selectedWarranty.createdAt).toLocaleString()}</p> */}
               <p>
                 <strong>ServiceWarranty Expiry:</strong>{" "}
                     {new Date(
-                      new Date(selectedWarranty.createdAt).setMonth(
-                        new Date(selectedWarranty.createdAt).getMonth() +
+                      new Date(selectedWarranty.purchaseDate).setMonth(
+                        new Date(selectedWarranty.purchaseDate).getMonth() +
                           (selectedWarranty.sWarranty || 0)
                       )
                     ).toLocaleDateString()}
@@ -180,8 +180,8 @@ useEffect(() => {
               <p>
                 <strong>Product Pro-Rate Expiry:</strong>{" "}
                     {new Date(
-                      new Date(selectedWarranty.createdAt).setMonth(
-                        new Date(selectedWarranty.createdAt).getMonth() +
+                      new Date(selectedWarranty.purchaseDate).setMonth(
+                        new Date(selectedWarranty.purchaseDate).getMonth() +
                           (selectedWarranty.pWarranty || 0)
                       )
                     ).toLocaleDateString()}

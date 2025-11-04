@@ -236,7 +236,7 @@ export default function WarrantyCheck() {
                     <p><strong>Product Name:</strong> {selectedWarranty.productName}</p>
                     <p>
                       <strong>Purchase Date:</strong>{" "}
-                      {new Date(selectedWarranty.createdAt).toLocaleDateString("en-IN")}
+                      {new Date(selectedWarranty.purchaseDate).toLocaleDateString("en-IN")}
                     </p>
                     <p>
                       <strong>Service Warranty Period:</strong>{" "}
@@ -249,8 +249,8 @@ export default function WarrantyCheck() {
                     <p>
                       <strong>Service Warranty Valid Until:</strong>{" "}
                       {new Date(
-                        new Date(selectedWarranty.createdAt).setMonth(
-                          new Date(selectedWarranty.createdAt).getMonth() +
+                        new Date(selectedWarranty.purchaseDate).setMonth(
+                          new Date(selectedWarranty.purchaseDate).getMonth() +
                             selectedWarranty.sWarranty
                         )
                       ).toLocaleDateString("en-IN")}
@@ -258,8 +258,8 @@ export default function WarrantyCheck() {
                     <p>
                       <strong>Pro-Rate WarrantyValid Until:</strong>{" "}
                       {new Date(
-                        new Date(selectedWarranty.createdAt).setMonth(
-                          new Date(selectedWarranty.createdAt).getMonth() +
+                        new Date(selectedWarranty.purchaseDate).setMonth(
+                          new Date(selectedWarranty.purchaseDate).getMonth() +
                             selectedWarranty.pWarranty
                         )
                       ).toLocaleDateString("en-IN")}

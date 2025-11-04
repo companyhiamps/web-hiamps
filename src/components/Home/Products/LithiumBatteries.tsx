@@ -17,7 +17,7 @@ export default function LithiumBatteries() {
           <div className="absolute left-0 top-0 -z-10 h-full w-full bg-noise-pattern bg-cover bg-center opacity-10 dark:opacity-40"></div>
 
           <div className="w-full">
-            <div className="-mx-4 flex w-full flex-wrap items-center flex-col-reverse md:flex-row-reverse">
+            <div className=" flex w-full flex-wrap items-center flex-col-reverse md:flex-row-reverse">
               {/* Left Image Section */}
               <motion.div
                 className="flex-1 mt-20  justify-center relative  w-full"
@@ -26,11 +26,11 @@ export default function LithiumBatteries() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
               >
                 <Image
-                  src="/images/pages/products/hiamps-red-series-battery-2.webp"
+                  src="/images/temp/lithium-dummy.avif"
                   alt="Hiamps Blue Series Battery"
                   width={450}
                   height={550}
-                  className="mx-auto max-w-full transition delay-150 duration-300 -z-10 contrast-125"
+                  className="mx-auto max-w-full transition delay-150 duration-300 -z-10 contrast-125 blur-xl"
                 />
               </motion.div>
 
