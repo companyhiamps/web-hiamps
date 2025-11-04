@@ -1,9 +1,12 @@
 import { connectDB } from "@/lib/mongodb";
 import Category from "@/models/Category";
+import { NextResponse } from "next/server";
 
 export async function GET() {
   await connectDB();
   const categories = await Category.find().sort({ createdAt: -1 });
+  if (!categories.length)
+          return NextResponse.json({ message: "No warranties found" }, { status: 404 });
   return Response.json(categories);
 }
 

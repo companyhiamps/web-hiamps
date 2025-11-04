@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import PowerImageSlider from "./PowerImageSlider";
 
 export default function PowerBackupBattery() {
   const { ref, inView } = useInView({
@@ -25,35 +26,7 @@ export default function PowerBackupBattery() {
                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
               >
-                <Image
-                  src="/images/pages/products/hiamps-blue-series-battery.webp"
-                  alt="Hiamps Blue Series Battery"
-                  width={450}
-                  height={550}
-                  className="mx-auto max-w-full transition delay-150 duration-300 -z-10 contrast-125"
-                />
-                <Image
-                  src="/images/pages/products/hiamps-green-series-battery.webp"
-                  alt="Hiamps Blue Series Battery"
-                  width={420}
-                  height={550}
-                  className="mx-auto max-w-full absolute top-9 left-10 brightness-105 contrast-125"
-                />
-
-                <Image
-                  src="/images/pages/products/hiamps-red-series-battery.webp"
-                  alt="Hiamps Blue Series Battery"
-                  width={420}
-                  height={550}
-                  className="mx-auto max-w-full absolute top-9 right-10 brightness-105 contrast-125"
-                />
-                <Image
-                  src="/images/pages/products/hiamps-red-series-battery-2.webp"
-                  alt="Hiamps Blue Series Battery"
-                  width={420}
-                  height={550}
-                  className="mx-auto max-w-full absolute -top-10 -z-1 right-20 brightness-105 contrast-125"
-                />
+                <PowerImageSlider inView={inView} />
               </motion.div>
 
               {/* Right Text Section */}
