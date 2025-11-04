@@ -33,11 +33,11 @@ export default function PowerBackupBatteries() {
                       transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                       <Image
-                        src="/images/temp/lithium-dummy.avif"
+                        src="/images/temp/lithium-dummy.webp"
                         alt="Hiamps Blue Series Battery"
                         width={450}
                         height={550}
-                        className="mx-auto max-w-full transition delay-150 duration-300 -z-10 contrast-125"
+                        className="mx-auto max-w-full transition delay-150 duration-300 -z-10 contrast-125 rounded-lg"
                       />
                     </motion.div>
       
