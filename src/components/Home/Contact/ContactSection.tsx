@@ -31,7 +31,7 @@ export default function ContactSection() {
             <Mail className="text-red-dark w-6 h-6 mt-1" />
             <div>
               <h4 className="font-semibold text-black mb-1">Email</h4>
-              <p className="text-black text-sm">info@hiampsbatteries.com</p>
+              <p className="text-black text-sm">info@hiamps.co</p>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ export default function ContactSection() {
             Call Now
           </a>
           <a
-            href="mailto:info@hiampsbatteries.com"
+            href="mailto:info@hiamps.co"
             className="bg-red-dark text-white px-6 py-3 rounded-lg shadow hover:bg-red transition"
           >
             Send an Enquiry

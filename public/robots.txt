@@ -1,0 +1,17 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /api/*
+Disallow: /auth
+Disallow: /auth/*
+
+# Host
+Host: https://hiamps.co
+
+# Sitemaps
+Sitemap: https://hiamps.co/sitemap.xml

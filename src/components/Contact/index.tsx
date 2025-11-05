@@ -142,7 +142,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-black mb-1">Email</h4>
                       <p className="text-black text-sm">
-                        info@hiampsbatteries.com
+                        info@hiamps.co
                       </p>
                     </div>
                   </div>
